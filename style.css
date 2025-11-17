@@ -664,14 +664,194 @@ p.sec3-1 {
     color: #f1c40f;
 }
 
-@media (max-width: 768px) {
-    .promo-banner {
+/* =========================
+   RESPONSIVE DESIGN START
+   ========================= */
+
+/* ========== LARGE TABLETS / SMALL DESKTOP (max-width: 1200px) ========== */
+@media (max-width: 1200px) {
+
+    .navbar ul {
+        gap: 40px;
+    }
+
+    .section3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service {
+        max-width: 40%;
+    }
+
+    .services_wrap {
+        gap: 40px;
+    }
+
+    .project img {
+        width: 33.33%;
+    }
+}
+
+/* ========== TABLETS (max-width: 992px) ========== */
+@media (max-width: 992px) {
+
+    .header {
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        gap: 25px;
+    }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .leftcontent,
+    .rightcontent {
+        width: 100%;
+    }
+
+    .services_wrap img {
+        width: 40%;
+    }
+
+    .service {
+        max-width: 80%;
+    }
+
+    .working {
+        flex-direction: column;
+        margin: 40px 20px;
+        text-align: center;
+    }
+
+    .map_section {
+        flex-direction: column;
+    }
+
+    .leftsidecontent,
+    .rightsidecontent {
+        width: 100%;
+    }
+
+    .stat-box h2 {
+        font-size: 28px;
+    }
+
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 50%;
+    }
+}
+
+/* ========== MOBILE PHONES (max-width: 768px) ========== */
+@media (max-width: 768px) {
+
+    h2.heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p.same.fonts {
+        margin: 20px 20px;
+        text-align: center;
+    }
+
+    a.button-bg, a.button-bg1, a.button-bg2 {
+        margin: 20px auto !important;
+        display: block;
+        width: fit-content;
+    }
+
+    .person {
+        background-size: 180px;
+        background-position: bottom right;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .section3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section_wrap {
+        height: 250px;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .service {
+        max-width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services_wrap img {
+        width: 60%;
+    }
+
+    .stat-box h2 {
+        font-size: 24px;
     }
 
     .promo-left {
-        max-width: 60%;
+        max-width: 100%;
     }
+
+    .promo-text {
+        font-size: 24px;
+    }
+
+    .project img {
+        width: 100%;
+    }
+}
+
+/* ========== SMALL MOBILE (max-width: 480px) ========== */
+@media (max-width: 480px) {
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h2.heading {
+        font-size: 24px;
+    }
+
+    .services_wrap img {
+        width: 80%;
+    }
+
+    .about {
+        width: 250px;
+    }
+
+    .badge-section img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .promo-text {
+        font-size: 20px;
+    }
+
+    .promo-subtext {
+        font-size: 14px;
+    }
+
 }
